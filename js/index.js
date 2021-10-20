@@ -119,6 +119,7 @@ function display(sol_num=0){
 
 
 function generate_select_opts(){
+    select.innerHTML = "";
     for(let i=0; i<solutions.length; i++){
         const opt = document.createElement('option');
         opt.value = i;
