@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="icon" href="https://www.clipartmax.com/png/middle/58-582236_chess-piece-king-queen-pawn-chess-white-king-icon.png">
+
+    <title>N Queens</title>
+</head>
+<body>
+    <main>
+        <!-- <div id="board"> -->
+            <ul>
+                <li style="border-radius: 10px 0 0;"> 
+                    <i class="chess-piece las la-chess-queen"></i>
+                </li>
+                <li>
+                </li>
+                <li>
+                </li>
+                <li style="border-radius: 0 10px 0 0;">
+                    
+                </li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li style="border-radius: 0 0 0 10px;"></li>
+                <li></li>
+                <li></li>
+                <li style="border-radius: 0 0 10px 0;"></li>
+            </ul>
+        <!-- </div> -->
+    </main>
+
+    <!-- control section -->
+    <aside>
+        <label for="grid-input"><h1>Grid Size (NxN)</h1></label>
+        <input type="number" name="" id="grid-input" min="4" max="8" value="4">
+        <input type="range" name="" id="grid-range" min="4" max="8" value="4">
+
+
+        <button id="solve-btn">Generate Solutions</button>
+        
+        <div class="line"></div>
+        <h4>There are # solutions generated for the chosen grid, chose one of them to display</h4>
+
+        <label for="solutions"><h1>Solutions</h1></label>
+        <select name="solutions" id="solutions"></select>
+    </aside>
+    <script src="https://pro.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
