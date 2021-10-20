@@ -68,7 +68,7 @@ function generate_solution(){
     solve();
     generate_select_opts();
     display();
-    
+    document.querySelector('aside h4').innerHTML = `There are ${solutions.length} solutions generated for the chosen grid, chose one of them to display`;
 }
 
 
